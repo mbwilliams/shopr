@@ -1,0 +1,12 @@
+<h1><%= @store.name %></h1>
+
+<p>
+  <strong>Location:</strong>
+  <%= @store.location %>
+</p>
+
+<%= link_to 'View all stores', stores_path %>
+| <%= link_to 'Edit Store', edit_store_path(@store) %>
+| <%= link_to 'Delete', store_path(@store),
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' }%>
