@@ -1,0 +1,22 @@
+nav#main-menu{
+  border-bottom: 1px solid #DFDFDF;
+  height: 25px;
+
+  a {
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:normal {
+      color: #a5c992;
+    }
+
+    &:visited {
+      color: #A5C992;
+    }
+
+    &:hover {
+      color: #639348;
+    }
+  }
+}
