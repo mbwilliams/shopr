@@ -1,1 +1,44 @@
-body { font-family: sans-serif; color: #434343; letter-spacing: -0.05em; }
+body {
+  font-family: sans-serif;
+  color: #434343;
+  letter-spacing: -0.05em;
+  font-weight: 100;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+
+
+  th {
+    background: #EEE;
+    padding: 8px 5px;
+    text-align: left;
+    border-bottom: 1px solid #CCC;
+    font-weight: bold;
+
+    &:first-child{
+     border-radius: 5px 0 0 0;
+    };
+
+    &:last-child{
+     border-radius: 0 5px 0 0;
+    };
+  }
+
+  td {
+    padding: 5px;
+    border-bottom: 1px solid #CCC;
+  }
+}
+
+.alert {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.error {
+  border:1px solid #E59A9A;
+  background: #F3DFDF;
+  color: #B55C5C;
+}
