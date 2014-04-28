@@ -1,8 +1,8 @@
 <%= form_for @store do |f| %>
   <% if @store.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@store.errors.count, "error") %> prohibited
-      this store from being saved:</h2>
+  <div id="error_explanation" class="alert error">
+    <strong><%= pluralize(@store.errors.count, "error") %> prohibited
+      this store from being saved:</strong>
     <ul>
     <% @store.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
