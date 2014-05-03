@@ -1,0 +1,21 @@
+<h1>Shopping Lists</h1>
+
+<p>
+  <%= link_to 'New Shopping List', new_shopping_list_path %>
+</p>
+
+<table>
+  <tr>
+    <th>Purchase Date</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+  <% @shopping_lists.each do |shopping_list| %>
+    <tr>
+      <td><%= shopping_list.purchase_date %></td>
+      <td><%= shopping_list.name %></td>
+      <td><%= shopping_list.description %></td>
+    </tr>
+  <% end  %>
+</table>
