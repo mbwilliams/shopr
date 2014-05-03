@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'shopping_lists/new'
+
   resources :stores
+
   resources :shopping_lists do
     resources :items
   end
