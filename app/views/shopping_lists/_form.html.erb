@@ -13,6 +13,11 @@
   </p>
 
   <p>
+    <%= f.label :store %><br>
+    <%= f.collection_select :store_id, Store.all, :id, :name %>
+  </p>
+
+  <p>
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </p>
