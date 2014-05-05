@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: shopr
+
+test:
+  <<: *default
+  database: shopr_test
+
+production:
+  <<: *default
