@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140503133626) do
+ActiveRecord::Schema.define(version: 20140505033436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,10 @@ ActiveRecord::Schema.define(version: 20140503133626) do
     t.date     "purchase_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "store_id"
   end
+
+  add_index "shopping_lists", ["store_id"], name: "index_shopping_lists_on_store_id"
 
   create_table "stores", force: true do |t|
     t.string   "name"
