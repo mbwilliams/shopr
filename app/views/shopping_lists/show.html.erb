@@ -1,0 +1,17 @@
+<h1><%= @shopping_list.name %></h1>
+
+<p>
+  <strong>Purchase Date:</strong>
+  <%= @shopping_list.purchase_date %>
+</p>
+
+<p>
+  <strong>Description:</strong><br>
+  <%= @shopping_list.description %>
+</p>
+
+<%= link_to 'View all shopping lists', shopping_lists_path %>
+| <%= link_to 'Edit Shopping List', edit_shopping_list_path(@shopping_list) %>
+| <%= link_to 'Delete', shopping_list_path(@shopping_list),
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' }%>
