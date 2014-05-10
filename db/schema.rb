@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20140505033436) do
     t.integer  "store_id"
   end
 
-  add_index "shopping_lists", ["store_id"], name: "index_shopping_lists_on_store_id"
+  add_index "shopping_lists", ["store_id"], name: "index_shopping_lists_on_store_id", using: :btree
 
   create_table "stores", force: true do |t|
     t.string   "name"
