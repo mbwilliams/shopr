@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  location: MyText
+minimart:
+  name: Mini Mart
+  location: A few blocks down the street
 
-two:
-  name: MyString
-  location: MyText
+hardware:
+  name: Local Hardware
+  location: Across town
