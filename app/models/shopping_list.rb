@@ -3,5 +3,4 @@ class ShoppingList < ActiveRecord::Base
 
   validates :name, presence: true
   validates :purchase_date, presence: true
-
 end

@@ -1,7 +1,19 @@
 require 'test_helper'
 
 class ShoppingListTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  test "should not save shopping list without name" do
+    shopping_list = shopping_lists(:at_minimart)
+    shopping_list.name = nil
+
+    assert_not shopping_list.save
+  end
+
+  test "should not save shopping list without purchase date" do
+    shopping_list = shopping_lists(:at_minimart)
+    shopping_list.purchase_date = nil
+
+    assert_not shopping_list.save
+  end
+
 end
