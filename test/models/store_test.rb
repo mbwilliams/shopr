@@ -3,15 +3,15 @@ require 'test_helper'
 class StoreTest < ActiveSupport::TestCase
 
   test "should not save store without name" do
-    store = Store.new
-    store.location = "My store's location"
+    store = stores(:minimart)
+    store.name = nil
 
     assert_not store.save
   end
 
   test "should not save store without location" do
-    store = Store.new
-    store.name = "My Store"
+    store = stores(:minimart)
+    store.location = nil
 
     assert_not store.save
   end
