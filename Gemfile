@@ -43,3 +43,7 @@ gem 'spring',        group: :development
 group :production do
   gem 'rails_12factor'
 end
+
+group :test do
+  gem 'rake'
+end
