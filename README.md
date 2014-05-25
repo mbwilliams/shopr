@@ -7,4 +7,5 @@ Shopr is your personal shopping assistant helping you find the best prices in yo
 
 * Get trends on how often you purchase a product.
 * Get reminders when you need to purchase a product.
-
+* Find the store that has your item the cheapest
+* Autobuild shopping list from previous items purchased.
