@@ -1,4 +1,4 @@
-<h1><%= @shopping_list.name %></h1>
+<h1>Shopping List</h1>
 
 <p>
   <strong>Purchase Date:</strong>
@@ -6,8 +6,8 @@
 </p>
 
 <p>
-  <strong>Description:</strong><br>
-  <%= @shopping_list.description %>
+  <strong>Store:</strong>
+  <%= @shopping_list.store.name %>
 </p>
 
 <%= link_to 'View all shopping lists', shopping_lists_path %>
