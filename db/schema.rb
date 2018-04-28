@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,25 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140505033436) do
+ActiveRecord::Schema.define(version: 2014_05_05_033436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "shopping_lists", force: true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.date     "purchase_date"
+  create_table "shopping_lists", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.date "purchase_date"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "store_id"
+    t.integer "store_id"
+    t.index ["store_id"], name: "index_shopping_lists_on_store_id"
   end
 
-  add_index "shopping_lists", ["store_id"], name: "index_shopping_lists_on_store_id", using: :btree
-
-  create_table "stores", force: true do |t|
-    t.string   "name"
-    t.text     "location"
+  create_table "stores", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.text "location"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
