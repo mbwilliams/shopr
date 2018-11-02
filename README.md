@@ -1,8 +1,8 @@
-#Shopr
+# Shopr
 
 [![Build Status](https://travis-ci.org/mbwilliams/shopr.svg?branch=master)](https://travis-ci.org/mbwilliams/shopr)
 
-###Overview
+### Overview
 Shopr is your personal shopping assistant helping you find the best prices in your neighbourhood.
 
 * Get trends on how often you purchase a product.
