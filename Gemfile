@@ -4,7 +4,7 @@ ruby '2.7.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.2'
+gem 'rails', '6.0.2.2'
 
 gem 'pg'
 
@@ -29,9 +29,6 @@ gem "loofah", ">= 2.2.3"
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,6 +42,11 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 group :production do
   gem 'rails_12factor'
+end
+
+group :development do
+  gem 'spring'
+  gem 'listen'
 end
 
 group :test do
